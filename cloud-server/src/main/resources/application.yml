@@ -1,0 +1,15 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: cloud-server
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  instance:
+    hostname: loaclhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
