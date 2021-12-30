@@ -1,0 +1,9 @@
+server:
+  port: 8899
+spring:
+  application:
+    name: cloud-system-provider
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: data

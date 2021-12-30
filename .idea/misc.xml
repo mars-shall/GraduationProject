@@ -5,6 +5,10 @@
       <list>
         <option value="$PROJECT_DIR$/cloud-parent/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-server/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-data/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-system-provider/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
