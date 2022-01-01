@@ -14,6 +14,13 @@
   </parent>
 
   <dependencies>
+
+    <dependency>
+      <groupId>com.practice.homework</groupId>
+      <artifactId>cloud-commons</artifactId>
+      <version>${parent.version}</version>
+    </dependency>
+
     <dependency>
       <groupId>com.practice.homework</groupId>
       <artifactId>cloud-data</artifactId>

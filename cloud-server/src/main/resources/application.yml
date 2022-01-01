@@ -7,7 +7,7 @@ spring:
     allow-bean-definition-overriding: true
 eureka:
   instance:
-    hostname: loaclhost
+    hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
