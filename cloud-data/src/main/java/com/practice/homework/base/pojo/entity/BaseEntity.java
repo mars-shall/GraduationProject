@@ -18,6 +18,6 @@ public class BaseEntity implements Serializable {
 	private Date createTime;
 	@TableField(value = "modifier")
 	private String modifier;
-	@TableField(value = "updateTime")
-	private Date updateTime;
+	@TableField(value = "modifiedTime")
+	private Date modifiedTime;
 }

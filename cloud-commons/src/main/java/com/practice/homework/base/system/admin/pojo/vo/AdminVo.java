@@ -1,6 +1,6 @@
-package com.practice.homework.system.admin.pojo.entity;
+package com.practice.homework.base.system.admin.pojo.vo;
 
-import com.practice.homework.base.pojo.entity.BaseEntity;
+import com.practice.homework.base.pojo.vo.BaseVO;
 import lombok.Data;
 
 /**
@@ -9,7 +9,7 @@ import lombok.Data;
  * @apiNote
  */
 @Data
-public class Admin extends BaseEntity {
+public class AdminVo extends BaseVO {
 	private static final long serialVersionUID = -7029188511855488108L;
 	private String id;
 	private String no;

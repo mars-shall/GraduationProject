@@ -1,10 +1,10 @@
-package com.practice.homework.system.hostpital.pojo.entity;
+package com.practice.homework.base.system.hostpital.pojo.vo;
 
-import com.practice.homework.base.pojo.entity.BaseEntity;
+import com.practice.homework.base.pojo.vo.BaseVO;
 import lombok.Data;
 
 @Data
-public class InHostpital extends BaseEntity {
+public class InHostpitalVO extends BaseVO {
 	private static final long serialVersionUID = 5916858605336243661L;
 	private Integer id;
 	private String name;

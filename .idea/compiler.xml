@@ -3,15 +3,20 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Maven default annotation processors profile" enabled="true">
+      <profile name="Annotation profile for cloud-system-provider" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud-data" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../my-maven/repository/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../my-maven/repository/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../my-maven/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
+        </processorPath>
         <module name="cloud-system-provider" />
+        <module name="cloud-data" />
         <module name="cloud-commons" />
-        <module name="cloud-consumer" />
         <module name="cloud-server" />
+        <module name="cloud-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
