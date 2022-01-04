@@ -7,7 +7,7 @@ import lombok.Data;
 public class DataCode extends BaseEntity {
 	private static final long serialVersionUID = 5470377107885702956L;
 	private Integer id;
-	private String parent;
+	private DataCode parent;
 	private String code;
 	private String text;
 }

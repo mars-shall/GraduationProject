@@ -7,11 +7,11 @@ import lombok.Data;
  * 专业技术职务信息表
  */
 @Data
-public class InPersonalVO extends BaseVO {
+public class ProfessionVO extends BaseVO {
 	private static final long serialVersionUID = -4842483339208906786L;
 	private Integer id;
-	private String category;
-	private String grade;
+	private ProCategoryVO category;
+	private ProGradeVO grade;
 	private String code;
 	private String name;
 }

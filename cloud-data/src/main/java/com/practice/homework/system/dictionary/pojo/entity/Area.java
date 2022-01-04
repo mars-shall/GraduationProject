@@ -7,7 +7,7 @@ import lombok.Data;
 public class Area extends BaseEntity {
 	private static final long serialVersionUID = 3945728722993461962L;
 	private Integer id;
-	private String parent;
+	private Area parent;
 	private String code;
 	private String text;
 }

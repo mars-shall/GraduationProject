@@ -7,7 +7,7 @@ import lombok.Data;
 public class MenuVO extends BaseVO {
 	private static final long serialVersionUID = 2013725096388310337L;
 	private Integer id;
-	private String parent;
+	private MenuVO parent;
 	private String menu;
 	private String text;
 	private String url;

@@ -7,7 +7,7 @@ import lombok.Data;
 public class Menu extends BaseEntity {
 	private static final long serialVersionUID = 2013725096388310337L;
 	private Integer id;
-	private String parent;
+	private Menu parent;
 	private String menu;
 	private String text;
 	private String url;

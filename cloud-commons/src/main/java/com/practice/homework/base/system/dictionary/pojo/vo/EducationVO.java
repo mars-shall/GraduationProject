@@ -4,7 +4,7 @@ import com.practice.homework.base.pojo.vo.BaseVO;
 import lombok.Data;
 
 @Data
-public class educationVO extends BaseVO {
+public class EducationVO extends BaseVO {
 	private static final long serialVersionUID = -6269287063260298552L;
 	private Integer id;
 	private String code;

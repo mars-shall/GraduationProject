@@ -1,10 +1,11 @@
 package com.practice.homework.base.system.hostpital.pojo.vo;
 
 import com.practice.homework.base.pojo.vo.BaseVO;
+import com.practice.homework.base.system.dictionary.pojo.vo.AreaVO;
 import lombok.Data;
 
 @Data
-public class InHostpitalVO extends BaseVO {
+public class HostpitalVO extends BaseVO {
 	private static final long serialVersionUID = 5916858605336243661L;
 	private Integer id;
 	private String name;
@@ -19,7 +20,7 @@ public class InHostpitalVO extends BaseVO {
 	private String village;
 	private String number;
 	private String postal;
-	private String area;
+	private AreaVO area;
 	private String cellphone;
 	private String email;
 }
