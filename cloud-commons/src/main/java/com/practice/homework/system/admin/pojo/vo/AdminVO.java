@@ -1,11 +1,11 @@
-package com.practice.homework.system.admin.pojo.entity;
+package com.practice.homework.system.admin.pojo.vo;
 
-import com.practice.homework.base.pojo.entity.BaseEntity;
+import com.practice.homework.base.pojo.vo.BaseVO;
 import lombok.Data;
 
 @Data
-public class Admin extends BaseEntity {
-	private static final long serialVersionUID = 97701779704003522L;
+public class AdminVO extends BaseVO {
+	private static final long serialVersionUID = 7208187721478109875L;
 	private String id;                      //主键
 	private String no;                      //工号
 	private String name;                    //姓名

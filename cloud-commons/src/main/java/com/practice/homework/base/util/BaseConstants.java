@@ -1,30 +1,25 @@
 package com.practice.homework.base.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.Date;
 import java.util.Properties;
 
 public class BaseConstants {
 	private static final Properties props = new Properties();
+	private static Logger logger = LoggerFactory.getLogger(BaseConstants.class);
 
 	static {
 		try {
 			props.load(BaseConstants.class.getClassLoader().getResourceAsStream("props/base.properties"));
 		}catch (Exception e){
 			e.printStackTrace();
+			logger.error(e.getMessage() + " : " + new Date(), e);
 		}
 	}
 
-	public static final String SWAGGER_TITLE = props.getProperty("swagger.title");
+	public static final String SECRET_KEY = props.getProperty("secret.key");
 
-	public static final String SWAGGER_DESCRIPTION = props.getProperty("swagger.description");
-
-	public static final String SWAGGER_VERSION = props.getProperty("swagger.version");
-
-	public static final String SWAGGER_CONTACT_NAME= props.getProperty("swagger.contact.name");
-
-	public static final String SWAGGER_CONTACT_URL = props.getProperty("swagger.contact.url");
-
-	public static final String SWAGGER_CONTACT_EMAIL = props.getProperty("swagger.contact.email");
-
-	public static final String SWAGGER_BASE_PACKAGE = props.getProperty("swagger.base.package");
-
+	public static final Long EXPIRE_AUTH_SEC = Long.parseLong(props.getProperty("expire.auth.sec"));
 }

@@ -50,8 +50,8 @@ public class ResponseVO implements Serializable {
 	public static ResponseVO getSuccess(String message) {
 		return new ResponseVO(ResponseCode.RESPONSE_SUCCESS.getCode(), message, "");
 	}
-	public static ResponseVO getSuccess(Object Data) {
-		return new ResponseVO(ResponseCode.RESPONSE_SUCCESS.getCode(),ResponseCode.RESPONSE_SUCCESS.getRemark(),Data);
+	public static ResponseVO getSuccess(String message,Object Data) {
+		return new ResponseVO(ResponseCode.RESPONSE_SUCCESS.getCode(),message,Data);
 	}
 
 	public static ResponseVO getUnauth(){
@@ -64,5 +64,10 @@ public class ResponseVO implements Serializable {
 
 	public static ResponseVO getException(Exception e){
 		return new ResponseVO(ResponseCode.RESPONSE_SUCCESS.getCode(),e.getMessage(), "");
+	}
+
+	public static ResponseVO exception(Exception exception) {
+		return new ResponseVO(ResponseCode.RESOPNSE_EXCEPTION.getCode(),exception.getMessage(), "");
+
 	}
 }
